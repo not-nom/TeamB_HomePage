@@ -1,0 +1,848 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: #5B5B5B;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.headerDiv {
+    width: 94.16%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 135px;
+    height: 36px;
+    background-image: url("../img/Logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo:hover {
+    background-image: url("../img/LogoOrange.svg");
+    transition: all 0.5s;
+}
+
+.nav {
+    width: 76.77%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav a {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+.nav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: top;
+    transition: transform 0.25s ease-out;
+}
+
+.nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.nav a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.nav a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/Banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 136px;
+    align-items: center;
+}
+
+.bannerwrap {
+    width: 76%;
+    flex-direction: column;
+    align-items: start;
+}
+
+.bannertitle {
+    font-family: "Hubballi", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    margin-bottom: 55px;
+}
+
+.bannerlink {
+    display: flex;
+    justify-content: center;
+}
+
+.bannerlink a {
+    font-family: "Hubballi", sans-serif;
+    background-color: rgba(255, 255, 255, 0);
+    width: 265px;
+    height: 95px;
+    border: 4px solid white;
+    border-radius: 70px;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.bannerlink a:hover {
+    background-color: #fff;
+    color: #FF6B00;
+    transition: all 1s;
+}
+
+.bannerlink a:hover::after {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    transition: all 1s;
+}
+
+.technologiesUsed {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.technologiesUsedtitle {
+    font-family: "Hubballi", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 136px;
+}
+
+.imagesTech {
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    margin-bottom: 122px;
+}
+
+.htmlIcon {
+    width: 240px;
+    height: 240px;
+    background-image: url("../img/HTML.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cssIcon {
+    width: 240px;
+    height: 240px;
+    background-image: url("../img/CSS.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jsIcon {
+    width: 240px;
+    height: 240px;
+    background-image: url("../img/JS.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.aboutus {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aboutustitle {
+    font-family: "Hubballi", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 136px;
+}
+
+.aboutuswrap {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.viktor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.viktor p {
+    margin-bottom: 6px;
+}
+
+.viktorphoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-image: url("../img/viktor.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 70px;
+}
+
+.viktorname {
+    font-family: "Trispace", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF6B00;
+}
+
+.viktorage {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.viktorrole {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.viktorplace {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.sofia {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+}
+
+.sofia p {
+    margin-bottom: 6px;
+    text-align: end;
+}
+
+.sofiaphoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-image: url("../img/sofia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 70px;
+}
+
+.sofianame {
+    font-family: "Trispace", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF6B00;
+}
+
+.sofiaage {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.sofiarole {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.sofiaplace {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.emil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.emil p {
+    margin-bottom: 6px;
+}
+
+.emilphoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-image: url("../img/emil.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 70px;
+}
+
+.emilname {
+    font-family: "Trispace", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6B00;
+}
+
+.emilage {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.emilrole {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.emilplace {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.andrii {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 62px;
+}
+
+.andrii p {
+    margin-bottom: 6px;
+    text-align: end;
+}
+
+.andriiphoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+    background-image: url("../img/andrii.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 70px;
+}
+
+.andriiname {
+    font-family: "Trispace", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF6B00;
+}
+
+.andriiage {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.andriirole {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.andriiplace {
+    font-family: 'Trispace', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+
+.otherProjectsTitle {
+    font-family: "Hubballi", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 136px;
+}
+
+.otherProjects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.imagesProj {
+    width: 76%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newyear,
+.test,
+.robot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.newyearIcon {
+    width: 240px;
+    height: 240px;
+    background-image: url("../img/newyear.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.testIcon {
+    width: 240px;
+    height: 240px;
+    background-image: url("../img/test.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.robotIcon {
+    width: 240px;
+    height: 240px;
+    background-image: url("../img/robot.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.otherProjects a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Trispace', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+footer {
+    background-color: #5b5b5b;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 31px;
+    padding-bottom: 20px;
+}
+
+.footertitle {
+    font-family: "Hubballi", sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 57px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.icons {
+    width: 41%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+    margin-bottom: 24px;
+}
+
+.footerline {
+    width: 4px;
+    height: 120px;
+    background-color: #fff;
+}
+
+.iconEmail {
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/email.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iconTelegram {
+    width: 103px;
+    height: 100px;
+    background-image: url("../img/Telegram.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.iconPhone {
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/phone.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.copyright {
+    font-family: "Hubballi", sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.icons a {
+    display: inline-block;
+    color: #ffffff;
+}
+
+.icons a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: top;
+    transition: transform 0.25s ease-out;
+}
+
+.icons a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+}
+
+.burger {
+    display: none;
+}
+
+@media screen and (max-width: 1320px) {
+    .bannerwrap {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav a {
+        font-size: 22px;
+    }
+    .imagesTech {
+        width: 95.53%;
+    }
+    .imagesProj {
+        width: 95.53%;
+    }
+    .icons {
+        width: 66%;
+    }
+  }
+
+@media screen and (max-width: 960px) {
+    .nav a {
+        font-size: 18px;
+    }
+    .imagesTech div {
+        width: 180px;
+        height: 180px;
+    }
+
+    .newyearIcon, .testIcon, .robotIcon{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .burger { 
+      display: block; 
+    } 
+    .nav { 
+      position: fixed; 
+      top: 8vh; 
+      right: 0; 
+      height: 92vh; 
+      width: 50%; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: space-around; 
+      background: #FF6B00; 
+      transform: translateX(100%); 
+      transition: transform 1s ease; 
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5); 
+    } 
+
+    .line { 
+        height: 2px; 
+        width: 35px; 
+        margin: 0.5rem 0; 
+        background: #ffffff; 
+        transition: transform 0.75s ease, opacity 0.75s ease; 
+      }
+    .headerDiv.show .line1 { 
+        transform: translate(-10px) rotate(45deg) translate(15px); 
+      } 
+      .headerDiv.show .line2 { 
+        opacity: 0; 
+      } 
+      .headerDiv.show .line3 { 
+        transform: translate(-10px) rotate(-45deg) translate(15px); 
+      } 
+      .headerDiv.show .nav { 
+        transform: translateX(0%);
+  }
+      .headerDiv.show .nav { 
+        transform: translateX(0%); 
+      }
+      .aboutus {
+        display: flex;
+        flex-direction: column;
+      }
+      .viktor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .viktorphoto {
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .viktor p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sofia {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .sofiaphoto {
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .sofia p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .emil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .emilphoto {
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .emil p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      .andrii {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .andriiphoto {
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .andrii p {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+}
+
+@media screen and (max-width: 780px) {
+    .nav a {
+        font-size: 18px;
+    }
+    .imagesTech div {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 60px;
+    }
+    .imagesProj {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagesTech {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newyearIcon, .testIcon, .robotIcon{
+        width: 180px;
+        height: 180px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerline {
+        transform: rotate(90deg);
+        margin: 0;
+    }
+
+    .iconPhone, .iconTelegram, .iconEmail {
+        margin: 0px;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .imagesTech div {
+        width: 120px;
+        height: 120px;
+    }
+
+    .otherProjects a {
+        font-size: 15px;
+    }
+
+    .technologiesUsedtitle {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .bannertitle {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    .bannerlink {
+        width: 240px;
+    }
+}
